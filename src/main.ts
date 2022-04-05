@@ -1,5 +1,9 @@
+//@ts-nocheck
+
+import './style.css'
+
 ;(async () => {
-  const model = await tf.loadLayersModel('training/tfjs-model/model.json')
+  const model = await tf.loadLayersModel('tfjs-model/model.json')
 
   const sketch = (p) => {
     let touchTime = Date.now()
@@ -113,8 +117,8 @@
       for (let i = 0; i < pixels.length; ++i) {
         pixels[i] = []
         for (let j = 0; j < pixels.length; ++j) {
-          pixelindex = pixels.length * i + j
-          actualindex = (pixelindex << 2) + alphachannel
+          let pixelindex = pixels.length * i + j
+          let actualindex = (pixelindex << 2) + alphachannel
           pixels[i][j] = [finalCanvas.pixels[actualindex] / 255]
         }
       }

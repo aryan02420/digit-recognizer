@@ -1,9 +1,15 @@
 {
   "name": "digit-recognizer",
+  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0"
   },
   "author": "aryan02420",
   "license": "MIT",
