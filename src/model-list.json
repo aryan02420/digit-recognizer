@@ -1,0 +1,4 @@
+{
+  "simple": "tfjs-model/model.json",
+  "conv": "tfjs-model/model.json"
+}
