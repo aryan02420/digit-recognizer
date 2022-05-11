@@ -16,6 +16,18 @@ canvas {
   max-width: calc(100vmin - 4rem);
   max-height: calc(100vmin - 4rem);
 }
+#loading {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}
+#loading::after {
+  content: 'loading';
+  position: absolute;
+  left: 140%;
+  top: 50%;
+  transform: translateY(-50%);
+}
 #app {
   display: flex;
   align-items: center;
@@ -23,6 +35,7 @@ canvas {
   gap: 2rem;
   flex-wrap: wrap;
   padding: 2rem;
+  user-select: none;
 }
 #d3 svg {
   max-width: calc(100vmin - 4rem);
