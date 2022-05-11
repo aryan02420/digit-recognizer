@@ -1,5 +1,5 @@
 {
-  "simple": "models/tfjs-model/model.json",
-  "conv2d": "models/tfjs-model/model.json",
+  "simple": "models/Conv2D/model.json",
+  "conv2d": "models/Conv2D/model.json",
   "template": "models/TEMPLATE/model.json"
 }
