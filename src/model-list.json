@@ -1,5 +1,4 @@
 {
-  "simple": "models/Conv2D/model.json",
-  "conv2d": "models/Conv2D/model.json",
-  "template": "models/TEMPLATE/model.json"
+  "Conv2D": "models/Conv2D/model.json",
+  "TEMPLATE": "models/TEMPLATE/model.json"
 }
