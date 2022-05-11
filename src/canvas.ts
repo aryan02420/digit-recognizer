@@ -60,10 +60,7 @@ const sketch = (p: p5) => {
     if (reevaluate) {
       touchTime = Date.now()
       refreshFinalCanvas()
-      let pixels = getPixels(finalCanvas!)
-      getPrediction(pixels).then((prediction) => {
-        displayPredictions(prediction)
-      })
+      predictAndShow()
       reevaluate = false
     }
     if (!mouseInsideCanvas()) return true
@@ -115,7 +112,15 @@ const sketch = (p: p5) => {
   }
 }
 
+export function predictAndShow() {
+  let pixels = getPixels(finalCanvas!)
+  getPrediction(pixels).then((prediction) => {
+    displayPredictions(prediction)
+  })
+}
+
 export function createCanvas() {
   if (p5Inst !== null) return
   p5Inst = new p5(sketch, document.getElementById('p5')!)
+  return p5Inst
 }
