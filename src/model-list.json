@@ -1,0 +1,4 @@
+{
+  "Conv2D": "models/Conv2D/model.json",
+  "TEMPLATE": "models/TEMPLATE/model.json"
+}
