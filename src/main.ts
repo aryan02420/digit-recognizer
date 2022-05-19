@@ -6,7 +6,7 @@ const modelPicker = document.getElementById('model_picker')! as HTMLSelectElemen
 const loader = document.getElementById('loading')!
 
 const availableModels = listModels()
-d3.select(modelPicker).selectAll('option').data(availableModels).enter().append('option').attr('value', d => d).text(d => d)
+d3.select(modelPicker).selectAll('option').data(availableModels).enter().append('option').attr('value', d => d).text(d => d).attr('selected', d => d === 'TEMPLATE')
 
 createCanvas()
 

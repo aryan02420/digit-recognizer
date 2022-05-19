@@ -14,7 +14,7 @@ export const loadModel = async (modelName: TModelName) => {
 }
 
 export const getPrediction = async (input: number[]) => {
-  if (model === null) model = await tf.loadLayersModel(modelList.template)
+  if (model === null) model = await tf.loadLayersModel(modelList.TEMPLATE)
   const result = model.predict(tf.tensor([input])) as tf.Tensor<tf.Rank>
   return (await result.array() as [number[]])[0]
 }
