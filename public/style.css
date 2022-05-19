@@ -5,10 +5,14 @@
 }
 body {
   min-height: 100vh;
+  padding: 2rem 0.5rem;
   display: grid;
   place-items: center;
   background-color: #fefefe;
   font-family: 'Courier New', Courier, monospace;
+}
+[hidden] {
+  display: none !important;
 }
 canvas {
   display: block;
@@ -17,16 +21,13 @@ canvas {
   max-height: calc(100vmin - 4rem);
 }
 #loading {
-  position: absolute;
-  top: 2rem;
-  left: 4rem;
-}
-#loading::after {
-  content: 'loading';
-  position: absolute;
-  left: 140%;
-  top: 50%;
-  transform: translateY(-50%);
+  position: fixed;
+  inset: 0rem;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  background-color: #fefefe77;
+  backdrop-filter: contrast(0.75) blur(2px);
 }
 #app {
   display: flex;
@@ -39,6 +40,7 @@ canvas {
 }
 #d3 svg {
   max-width: calc(100vmin - 4rem);
+  max-height: calc(100vmin - 4rem);
   fill: #2a2a2a;
 }
 #d3 svg rect {
