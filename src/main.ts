@@ -1,6 +1,4 @@
 import * as d3 from 'd3'
-
-import './style.css'
 import { createCanvas, predictAndShow } from './canvas'
 import { loadModel, listModels } from './model'
 
