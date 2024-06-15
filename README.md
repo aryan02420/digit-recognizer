@@ -1,8 +1,7 @@
 # Digit Recognizer
 
-
-Demo: <a href="https://aryan02420.github.io/digit-recognizer/">https://aryan02420.github.io/digit-recognizer/</a>
+Demo: <a href="https://digitrecognizer.vercel.app//">digitrecognizer.vercel.app</a>
 
 <p align="center">
-    <a href="https://aryan02420.github.io/digit-recognizer/"><img alt="postcss-themewind demo" src="./public/preview.gif"></a>
+    <img alt="digit recognizer demo" src="./public/preview.gif">
 </p>
